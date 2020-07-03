@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="../src/img/title.png" type="image/png">
+    <title>Latihan</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/covid-19.png" width="40" height="auto" class="d-inline-block align-top" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(191, 158, 229); font-size: 24px;"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="color: rgb(191, 158, 229); font-size: 24px;"><strong>About</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color: rgb(191, 158, 229); font-size: 24px;"><strong>Contact</strong></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+          <div class="jumbotron">
+              <img class="rounded float-right img-fluid" src="img/dockter.png" alt="doctor" width="400px" height="auto">
+            <div class="text-white pemmantuan mt-5">
+              <h2 class="pejuang">Terimakasih Pejuang <strong><span class="text-danger">COVID-19</span></strong></h2>
+            </div>
+          </div>
+          <div class="rounded-15 shadow bg-white">
+            <div class="col-lg-12 col-md-12 mb-10 text-center p-4">
+              <h3 class="font-hotline font-weight-bold pb-5">
+                Data Stastika Indonesia Dan Global
+              </h3>
+              <div class="row justify-content-center mr-lg-5 mr-sm-5 ml-lg-5 ml-sm-5">
+                <div class="col-lg-3 col-md-6 col-6 mb-3">
+                    <div class="card bg-warning box-primary-shadow hoverable">
+                      <div class="card-body">
+                        <div class="d-flex">
+                          <div class="text-white">
+                            <p class="text-white text-left mb-2">Positif Indonesia</p>
+                            <h4 class="mb-0 number-font text-left mb-2" id="positif"></h4>
+                            <p class="text-white text-left mb-0">Orang</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3">
+                  <div class="card bg-success img-card box-primary-shadow">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="text-white">
+                          <p class="text-white text-left mb-2">Sembuh Indonesia</p>
+                          <h4 class="mb-0 number-font text-left mb-2" id="sembuh"></h4>
+                          <p class="text-white text-left mb-0">Orang</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3">
+                  <div class="card bg-danger box-primary-shadow">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="text-white">
+                          <p class="text-white text-left mb-2">Meninggal Indonesia</p>
+                          <h4 class="mb-0 number-font text-left mb-2" id="meninggal"></h4>
+                          <p class="text-white text-left mb-0">Orang</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-3">
+                  <div class="card bg-warning box-primary-shadow">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <div class="text-white">
+                          <p class="text-white text-left mb-2">Positif Global</p>
+                          <h4 class="mb-0 number-font text-left mb-2" id="total"></h4>
+                          <p class="text-white text-left mb-0">Orang</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+          <div class="card mt-4 justify-content-center shadow" style="width: 80%;">
+            <div class="card-header">
+              <h3 class="card-title" id="h2">Sebaran Virus Corona Di Indonesia</h3>
+              <div class="card-body">
+                <div class="table table-xs-responsive table-hover">
+                  <table class="table table-bordered table-hover" id="table">
+                    <thead>
+                      <tr>
+                        <th style="width: 10%;" class="text-center">No</th>
+                        <th style="width: 40%;" class="text-center">Provinsi</th>
+                        <th style="width: 13.3%;" class="text-center">Sembuh</th>
+                        <th style="width: 13.3%;" class="text-center">Positif</th>
+                        <th style="width: 13.3%;" class="text-center">Meninggal</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="card mt-4 mb-2 col-lg-6 col-md-6 col-sm-8 col-10 shadow" id="about">
+                <h2 class="mt-4 ml-4">Apa Itu <strong>COVID-19 ?</strong></h2>
+            <div class="text-center">
+             <img src="" alt="" srcset="">
+              <p>Corona Virus Disease 2019 atau yang biasa disingkat COVID-19 adalah penyakit menular yang disebabkan oleh SARS-CoV-2, 
+                salah satu jenis koronavirus. Penderita COVID-19 dapat mengalami demam, batuk kering, dan kesulitan bernafas</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/getdata.js"></script>
+</body>
+<div class="footer" id="contact">
+  <div class="isifooter">
+      <h2>Jika ada keluhan</h2>
+      <p>Hubungi Call Center <a href="tel:/199" style="color: white;"><strong>199</strong></a></p>
+      <span class="footersosmed">
+          <a href="#"><img class="imgsosmed" src="img/facebook.png" width="30px" height="30px"></a>
+          <a href="#"><img class="imgsosmed" src="img/instagram (1).png" width="30px" height="30px"></a>
+          <a href="#"><img class="imgsosmed" src="img/whatsapp.png" width="30px" height="30px"></a>
+      </span>
+  </div>
+</div>
+</footer>
+</html>
